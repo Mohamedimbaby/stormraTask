@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 690),
       allowFontScaling: false,
       builder :()=> MaterialApp(
+            debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         home: BlocProvider(
             create: (c)=>CovidBloc(),
