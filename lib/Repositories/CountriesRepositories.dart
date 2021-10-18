@@ -32,7 +32,7 @@ static void _setCircle(LatLng point ) {
 }
 
  static Future<HashSet<Circle>> drawCircles(List <Country> countries)async {
-   for(int counter =0 ;_counter < 30;counter++){
+   for(int counter =0 ;_counter < 50;counter++){
      try{
        List<Location> locations = await locationFromAddress(countries[counter].country);
        _setCircle(LatLng(locations[0].latitude,locations[0].longitude));
